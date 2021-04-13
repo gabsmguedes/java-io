@@ -7,10 +7,13 @@ public class Leitura {
     public static void main(String[] args) throws IOException {
 
         FileInputStream file = new FileInputStream("leitura.txt");
-        InputStreamReader reader = new InputStreamReader(file);
+        Reader reader = new InputStreamReader(file);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String linha = bufferedReader.readLine();
-        System.out.println(linha);
+        while(linha != null ){
+            System.out.println(linha);
+            linha = bufferedReader.readLine();
+        }
         bufferedReader.close();
     }
 }
