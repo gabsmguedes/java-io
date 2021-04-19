@@ -10,7 +10,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\encoding.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\br\com\alura\java\io\LeituraCsv.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\br\com\alura\java\io\LeituraUnicodeEEncoding.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />

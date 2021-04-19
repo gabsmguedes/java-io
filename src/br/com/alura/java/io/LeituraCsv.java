@@ -1,13 +1,14 @@
 package br.com.alura.java.io;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class LeituraCsv {
 
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(new File("contas.csv"));
+        Scanner scanner = new Scanner(new File("encoding.csv"), StandardCharsets.UTF_8);
 
         while (scanner.hasNextLine()) {
             String nextLine = scanner.nextLine();
